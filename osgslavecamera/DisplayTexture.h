@@ -5,10 +5,11 @@
 class DisplayTexture : public osg::Camera
 {
 public:
-    DisplayTexture();
+    DisplayTexture(osg::Texture2D * tex);
 
     virtual ~DisplayTexture(){}
 
-    void setTexture(osg::Texture2D * tex);
+	//void setTexture(osg::Texture2D * tex);
+	osg::Texture2D * _tex;
 
 };
